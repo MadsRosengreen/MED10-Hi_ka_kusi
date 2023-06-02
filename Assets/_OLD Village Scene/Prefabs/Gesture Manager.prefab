@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2513261789326080604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2513261789326080592}
+  - component: {fileID: 2513261789326080593}
+  - component: {fileID: 2513261789326080595}
+  - component: {fileID: 2513261789326080599}
+  - component: {fileID: 2513261789326080594}
+  - component: {fileID: 7113592331051598692}
+  - component: {fileID: 5878314987107677625}
+  - component: {fileID: 7549850002164618359}
+  - component: {fileID: 2513261789326080596}
+  - component: {fileID: 2513261789326080597}
+  m_Layer: 0
+  m_Name: Gesture Manager
+  m_TagString: GestureManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2513261789326080592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09849498, y: 0.59692395, z: 1.4371544}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2513261789326080593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49449fe24aa0bd44e9af9d5c50d1de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recSkeleton: {fileID: 0}
+  rightHandSkeleton: {fileID: 0}
+  leftHandSkeleton: {fileID: 0}
+  debugMode: 0
+  isInitialized: 0
+--- !u!114 &2513261789326080595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9d26c17db8e66f419f014f7c26f4ad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereInterval: 0.1
+  sphereScale: 0.05
+  R_Gestures: []
+  L_Gestures: []
+  isLeftHand: 0
+--- !u!114 &2513261789326080599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d5030bbe6b43747b82a9c60ea26f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gestureSphere: {fileID: 2339036407777216907, guid: d4d6cc6cc8c975a469d4313572428369, type: 3}
+  gesturePath: {fileID: 1123906431167228272, guid: 840df6a7a7f832d419576d74cd2c60db, type: 3}
+  dynamicGestures: []
+  isRunning: 0
+--- !u!114 &2513261789326080594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a684928345e8c0742adaaba1928a6948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.04
+  currentGesture:
+    name: 
+    fingerData: []
+--- !u!114 &7113592331051598692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45a82987da2aeb47ab5ab1f25f34cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.04
+  currentGesture:
+    name: 
+    fingerData: []
+--- !u!114 &5878314987107677625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29d9438a10a16349b4585404f430b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexSphere: {fileID: 6180287862201043868, guid: d8b3057942ba30b448971cec6773c742, type: 3}
+  indexSphereR: {fileID: 0}
+  spherePathList_R: []
+  indexSphereBone: 8
+  indexSphereScale: 0.1
+  gestureResetDelay: 0.5
+  pathsInstantiated_R: 0
+  particlesInstantiated_R: 0
+  iCanGrab_R: 0
+--- !u!114 &7549850002164618359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34f09a644e4f654f9a0e296f8e727cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexSphere: {fileID: 6180287862201043868, guid: d8b3057942ba30b448971cec6773c742, type: 3}
+  indexSphereL: {fileID: 0}
+  spherePathList_L: []
+  indexSphereBone: 8
+  indexSphereScale: 0.1
+  gestureResetDelay: 0.5
+  pathsInstantiated_L: 0
+  particlesInstantiated_L: 0
+  iCanGrab_L: 0
+--- !u!114 &2513261789326080596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519a20d179a157c4fb2fc814b3a436ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sandParticles: {fileID: 2748505839471150076, guid: 494e759470f12954784f1faa206d21ba, type: 3}
+--- !u!114 &2513261789326080597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513261789326080604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c91321697d1514e9dd8d4ababcc8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
